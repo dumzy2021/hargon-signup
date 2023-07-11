@@ -1,0 +1,19 @@
+.side-image{
+    min-height: 100vh;
+    background: url('/assets/signup/signup-logo.png');
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+ 
+  .auth-content{
+    max-height: 100vh;
+    overflow-y: scroll;
+    max-width: 500px;
+    &::-webkit-scrollbar {
+        display: none;
+      }
+      
+  }
+  

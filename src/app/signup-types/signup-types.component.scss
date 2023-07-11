@@ -1,0 +1,79 @@
+.account-type {
+  &-title {
+    color: #000;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-family: Syne;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  &-subtitle {
+    color: #999;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-family: Syne;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+}
+.types {
+  margin-top: 1.5rem;
+  .type {
+    padding: 1.3rem 0.8rem;
+    gap: 1.5rem;
+    border-radius: 16px;
+    border: 1px solid #fafafa;
+    cursor: pointer;
+    background: #fafafa;
+    box-shadow: 0px 4px 20px 0px rgba(133, 133, 133, 0.08);
+    margin-bottom: 3rem;
+    &-contents {
+      flex: 1;
+    }
+    &-name {
+      color: #020518;
+      font-family: Syne;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px;
+    }
+    &-info {
+      color: #9ca3af;
+      font-family: Syne;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 18px;
+    }
+    &-coming-soon {
+      padding: 5px 10px;
+      text-align: center;
+      display: inline-block;
+      border-radius: 100px;
+      background: #228b22;
+      color: #fff;
+      font-family: Syne;
+      font-size: 8px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    &:hover {
+      border: 1px solid #328a28;
+    }
+  }
+}
+.have-account{
+    color: #000;
+    font-family: Syne;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    .sign-in{
+        color: #23A323;
+    }
+}

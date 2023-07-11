@@ -1,0 +1,32 @@
+<div class="mt-4">
+    <h4 class="account-type-title">
+        Select which type of account you want to open
+    </h4>
+    <p class="account-type-subtitle">
+        Select which type of account you want to open
+    </p>
+
+    <div class="types">
+        <div class="type d-md-flex align-items-center justify-content-between pointer" *ngFor="let item of types" [routerLink]="item?.route" >
+            <span class="type-icon mb-3 mb-md-0 d-inline-block">
+                <img [src]="item?.icon" alt="">
+            </span>
+            <div class="type-contents flex-wrap d-flex align-items-center justify-content-between">
+                <div class="type-details">
+                    <h3 class="type-name">{{item?.type}}</h3>
+                    <p class="type-info">Select which type of account you want to open</p>
+                </div>
+                <span class="type-arrow" *ngIf="item?.isAvailable">
+                    <img src="assets/signup/arrow-right.svg" alt="">
+                </span>
+                <span class="type-coming-soon" *ngIf="!item?.isAvailable">
+                   coming soon
+                </span>
+
+            </div>
+        </div>
+    </div>
+    <div class="mt-3">
+        <p class="have-account">Already have an account? <span class="sign-in"> Sign In</span></p>
+    </div>
+</div>

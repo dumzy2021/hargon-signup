@@ -1,0 +1,23 @@
+<div class="mt-4 otp">
+  <h5 class="otp-title mb-3">OTP Verification</h5>
+  <p class="otp-subtitle mb-0">
+    We sent you an OTP code to this email
+    <span class="otp-email"> AyodeleVincentOlagunju888@gmail.com </span>
+  </p>
+<p class="pointer otp-email-change mb-4" routerLink="/change-email">
+    Change email
+</p>
+
+  <div class="mt-5">
+<div class="otp-inputs">
+    <ngx-otp-input [config]="otpInputConfig"></ngx-otp-input>
+</div>
+
+    <div class="my-4 ">
+        <p class="have-account pointer">Didn’t get an OTP code?<span class="sign-in"> RESEND</span></p>
+    </div>
+    <button type="button" class="otp-btn" routerLink="/otp-verification">
+        Verify
+      </button>
+  </div>
+</div>

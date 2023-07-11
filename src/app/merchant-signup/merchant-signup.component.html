@@ -1,0 +1,74 @@
+<div class="mt-4 merchant">
+  <h4 class="merchant-title mb-4">Create a merchant account</h4>
+  <form class="row g-4">
+    <div class="col-12">
+      <input
+        type="text"
+        placeholder="</KodeHex>"
+        class="form-control shadow-none form-control-lg merchant-input"
+      />
+      <div class="merchant-username text-sm text-end">
+    "KodeHex>"is the new username 
+       
+      </div>
+    </div>
+    <div class="col-12">
+      <input
+        type="text"
+        placeholder="Business Name"
+        class="form-control shadow-none form-control-lg merchant-input"
+      />
+    </div>
+    <div class="col-12">
+      <input
+        type="text"
+        placeholder="Business Phone Number"
+        class="form-control shadow-none form-control-lg merchant-input"
+      />
+    </div>
+    <div class="col-12">
+      <select
+        class="form-select shadow-none form-select-lg"
+        aria-placeholder="Business Industry"
+        aria-label=".form-select-sm example"
+      >
+      <option selected disabled class="merchant-select">Business Industry</option>
+        <option *ngFor="let industry of industries" class="merchant-select">
+          {{ industry }}
+        </option>
+      </select>
+    </div>
+    <div class="col-12">
+      <input
+        type="text"
+        placeholder="Business Email"
+        class="merchant-input form-control shadow-none form-control-lg"
+      />
+    </div>
+    <div class="col-12">
+      <input
+        type="text"
+        placeholder="Business website or social handle"
+        class="form-control shadow-none form-control-lg merchant-input"
+      />
+    </div>
+    <div class="col-12 position-relative">
+      <input
+        [type]="isShowPassword?'text':'password'"
+        placeholder="Password"
+        class="form-control shadow-none form-control-lg merchant-input"
+      />
+      <img src="assets/signup/eye.svg" (click)="onPaswordChange()" alt="" class="eye">
+    </div>
+    <div class="col-12">
+      <button type="submit" class="signup-btn" routerLink="/otp-verification">
+        Sign Up
+      </button>
+    </div>
+  </form>
+  <div class="mt-3 text-center">
+    <p class="have-account pointer">
+      Already have an account? <span class="sign-in"> Sign In</span>
+    </p>
+  </div>
+</div>
